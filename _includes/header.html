@@ -1,9 +1,13 @@
-<header>
-  <nav>
-    <a href="{{ '/' | relative_url }}">Home</a>
-    <a href="{{ '/pages/portfolio.html' | relative_url }}">Portfolio</a>
-    <a href="{{ '/pages/blog.html' | relative_url }}">Blog</a>
-    <a href="{{ '/pages/about.html' | relative_url }}">About</a>
-    <a href="{{ '/pages/contact.html' | relative_url }}">Contact</a>
-  </nav>
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="{{ '/' | relative_url }}">Adouiyeh</a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/pages/portfolio.html' | relative_url }}">Portfolio</a>
+      <a href="{{ '/pages/blog.html' | relative_url }}">Blog</a>
+      <a href="{{ '/pages/about.html' | relative_url }}">About</a>
+      <a href="{{ '/pages/contact.html' | relative_url }}">Contact</a>
+    </nav>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme">🌙</button>
+  </div>
 </header>

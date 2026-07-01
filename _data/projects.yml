@@ -1,0 +1,17 @@
+- name: Studio Notes
+  description: A polished content-first landing page for a creative studio.
+  tags: [Jekyll, HTML, CSS]
+  live_url: https://example.com
+  source_url: https://github.com/example/studio-notes
+
+- name: Atlas Journal
+  description: A minimalist journal theme tuned for long-form articles and essays.
+  tags: [Jekyll, Liquid, Sass]
+  live_url: https://example.com
+  source_url: https://github.com/example/atlas-journal
+
+- name: Streamline UI
+  description: A component library concept for quick prototyping and documentation.
+  tags: [HTML, CSS, JavaScript]
+  live_url: https://example.com
+  source_url: https://github.com/example/streamline-ui

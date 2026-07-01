@@ -1,0 +1,9 @@
+<footer>
+  <p>&copy; {{ site.time | date: "%Y" }} {{ site.author }}. All rights reserved.</p>
+  <div class="social-links">
+    {% if site.social.twitter %}<a href="https://twitter.com/{{ site.social.twitter }}">Twitter</a>{% endif %}
+    {% if site.social.github %}<a href="https://github.com/{{ site.social.github }}">GitHub</a>{% endif %}
+    {% if site.social.linkedin %}<a href="https://linkedin.com/in/{{ site.social.linkedin }}">LinkedIn</a>{% endif %}
+    {% if site.social.email %}<a href="mailto:{{ site.social.email }}">Email</a>{% endif %}
+  </div>
+</footer>

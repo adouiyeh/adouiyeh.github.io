@@ -1,28 +1,30 @@
 # adouiyeh.github.io
 
-A personal blog and portfolio site built with Jekyll and hosted on GitHub Pages.
+A Jekyll blog using [Beautiful Jekyll](https://beautifuljekyll.com/) as a remote theme and deployed with GitHub Pages.
 
-## Local development
+## Local Development
 
-1. Install Ruby and Bundler if needed.
+1. Install Ruby and Bundler.
 2. Install dependencies:
+
    ```bash
    bundle install
    ```
+
 3. Start the local server:
+
    ```bash
    bundle exec jekyll serve
    ```
-4. Open http://localhost:4000 in your browser.
 
-## Add new content
+4. Open <http://localhost:4000>.
 
-- Blog post: create a new markdown file in `_posts/` using the `YYYY-MM-DD-title.md` format.
-- Portfolio project: add an entry to `_data/projects.yml`.
-- New page: create a markdown file in `pages/` and set the front matter with `layout: default`.
+## Content
+
+- Blog posts live in `_posts/` and use the `YYYY-MM-DD-title.md` naming format.
+- Pages live in `pages/`.
+- Site-wide settings, navigation, social links, colors, and the Beautiful Jekyll remote theme are configured in `_config.yml`.
 
 ## Deployment
 
-This repository includes a GitHub Pages workflow in [.github/workflows/pages.yml](.github/workflows/pages.yml) for automated deployment from the `main` branch.
-
-If you host this as a user site, keep the site at the repository root. If you prefer a project site, update the `baseurl` setting in `_config.yml` accordingly.
+GitHub Actions builds and deploys the site with `.github/workflows/pages.yml` on pushes to `main` or `master`.

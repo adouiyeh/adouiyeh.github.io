@@ -1,11 +1,10 @@
 ---
-layout: default
+layout: page
 title: Contact
+subtitle: Get in touch
+permalink: /pages/contact/
 ---
 
-<section class="card">
-  <h1>Contact</h1>
-  <p>Reach out for collaborations, questions, or a quick chat about your next website.</p>
-  <p>Email: <a href="mailto:{{ site.social.email }}">{{ site.social.email }}</a></p>
-  <p>GitHub: <a href="https://github.com/{{ site.social.github }}">{{ site.social.github }}</a></p>
-</section>
+For collaborations, questions, or a quick note about the site, send an email to [{{ site.social-network-links.email }}](mailto:{{ site.social-network-links.email }}).
+
+You can also find me on [GitHub](https://github.com/{{ site.social-network-links.github }}) and [LinkedIn](https://linkedin.com/in/{{ site.social-network-links.linkedin }}).

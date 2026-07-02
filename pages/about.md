@@ -1,24 +1,21 @@
 ---
 layout: page
 title: About
-subtitle: A brief introduction and professional snapshot.
+subtitle: A short note about this site
+permalink: /pages/about/
 ---
 
-<p>I’m a developer and writer focused on building clean, useful web experiences. My work blends practical design, maintainable code, and thoughtful content strategy.</p>
+I write about building clear, useful things for the web: Jekyll, GitHub Pages, frontend design, product thinking, and the practical work behind clean digital experiences.
 
-<h2>Skills</h2>
-<ul>
-  <li>Jekyll and GitHub Pages</li>
-  <li>HTML, CSS, and JavaScript</li>
-  <li>Static-site content strategy</li>
-  <li>Responsive and accessible design</li>
-</ul>
+This site is intentionally simple. It is a place for published notes, experiments, and observations about making software and writing easier to read.
 
-<h2>Experience</h2>
-<ul>
-  <li>2024–Present — Building polished personal sites and portfolios</li>
-  <li>2022–2024 — Shipping content-focused front-end projects</li>
-</ul>
+<!-- ## Focus
 
-<h2>Education</h2>
-<p>Bachelor’s degree in a related field, with a strong interest in communication, design, and software.</p>
+- Jekyll and GitHub Pages
+- HTML, CSS, and JavaScript
+- Static-site publishing workflows
+- Content-first interface design -->
+
+## Contact
+
+You can reach me at [{{ site.social-network-links.email }}](mailto:{{ site.social-network-links.email }}).

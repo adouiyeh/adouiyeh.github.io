@@ -1,32 +1,96 @@
-title: "Your Name's Personal Site"
+title: "Douiyeh Ali"
+author: "Douiyeh Ali"
 description: "A personal blog and portfolio site."
-author: "Your Name"
-url: "https://adouiyeh.github.io" # The base hostname & protocol for your site
-baseurl: "" # The subpath of your site, e.g. /blog
-permalink: /blog/:year/:month/:day/:title/
 
-# Social links
-social:
-  twitter: your-twitter-handle
-  github: your-github-handle
-  linkedin: your-linkedin-profile
-  email: your-email@example.com
+url: "https://adouiyeh.github.io"
+baseurl: ""
 
-# Build settings
+remote_theme: daattali/beautiful-jekyll@6.0.1
+
+navbar-links:
+  Home: "/"
+  Archive: "pages/blog"
+  About: "pages/about"
+  Contact: "pages/contact"
+
+# avatar: "/assets/images/deye.png"
+# round-avatar: true
+
+social-network-links:
+  email: "adouiyeh@gmail.com"
+  github: "adouiyeh"
+  linkedin: "alidouiyeh"
+  rss: true
+
+share-links-active:
+  twitter: true
+  facebook: false
+  linkedin: true
+  reddit: false
+
+title-on-all-pages: true
+post_search: true
+feed_show_excerpt: true
+feed_show_tags: true
+excerpt_length: 45
+date_format: "%B %-d, %Y"
+
+page-col:          #F7F7F8 — Claude’s main canvas: cool, near‑white gray
+text-col:          #1C1C1F — deep neutral ink used for body text
+link-col:          #5B5FEF — Claude’s signature indigo‑blue accent
+hover-col:         #4A4ED1 — slightly darker indigo for hover states
+navbar-col:        #FFFFFF — Claude’s header bar: crisp white
+navbar-text-col:   #1C1C1F — same ink tone for consistency
+navbar-border-col: #E2E2E6 — subtle cool-gray divider line
+footer-col:        #FFFFFF — mirrors navbar for clean bookending
+footer-text-col:   #6E6E73 — muted gray used for secondary text
+footer-link-col:   #5B5FEF — same indigo accent for links
+footer-hover-col:  #4A4ED1 — hover matches main accent behavior
+
+# page-col:          "#FDF6E3"   # Solarized base3 — warm cream background
+# text-col:           "#586E75"   # Solarized base01 — soft slate body text
+# link-col:           "#CB4B16"   # Claude/Solarized terracotta-orange accent
+# hover-col:          "#9D3A11"   # deeper burnt orange on hover
+# navbar-col:         "#EEE8D5"   # Solarized base2 — slightly darker cream
+# navbar-text-col:    "#073642"   # Solarized base03 — deep ink for contrast
+# navbar-border-col:  "#D8CFB4"   # muted tan border, sits between page/navbar
+# footer-col:         "#EEE8D5"   # matches navbar for visual bookending
+# footer-text-col:    "#839496"   # Solarized base0 — quiet secondary text
+# footer-link-col:    "#586E75"   # same slate as body text, understated
+# footer-hover-col:   "#CB4B16"   # ties back to the main accent
+
 markdown: kramdown
-theme: minima # Using a default theme for now, will override with custom layouts
+highlighter: rouge
+permalink: /blog/:year/:month/:day/:title/
+paginate: 5
+kramdown:
+  input: GFM
+
+site-css:
+  - "/assets/css/custom.css"
 
 plugins:
+  - jekyll-remote-theme
+  - jekyll-paginate
+  - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-paginate # Or jekyll-paginate-v2 if supported and preferred
 
-# Pagination settings
-paginate: 5
-paginate_path: "/blog/page:num/"
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: false
+      social-share: true
+  - scope:
+      path: ""
+    values:
+      layout: "page"
 
-collections:
-  projects:
-    output: true
-    permalink: /portfolio/:name/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .agent.md

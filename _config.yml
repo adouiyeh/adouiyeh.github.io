@@ -15,6 +15,7 @@ navbar-links:
 
 # avatar: "/assets/images/deye.png"
 # round-avatar: true
+favicon: "/assets/images/favicon.svg"
 
 social-network-links:
   email: "adouiyeh@gmail.com"
